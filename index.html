@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>¡TRIVIA!</title>
+    <body bgcolor=”#A2F9FC”><h1><center>TRIVIA</center></h1><font size=”5″ face=”Comic Sans MS, Arial, MS Sans Serif”></font>
+    </align>
+    <script>
+        function preguntaNombre() {
+            alert("Listo")
+            document.getElementById('inicio').style.display = 'none';
+            document.getElementById('tema').style.display = 'block';
+        }
+
+        function cine() {
+            document.getElementById('tema').style.display = 'none';
+            document.getElementById('cine').style.display = 'block';
+        }
+
+        function musica() {
+            document.getElementById('tema').style.display = 'none';
+            document.getElementById('musica').style.display = 'block';
+        }
+
+
+    </script>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header style="background:seagreen;"></header>
+    <br>
+    <b>
+        <div id="inicio">
+            <h1 align="center">
+                <font color="black">¡Juguemos con Trivia!
+            </h1>
+    </b>
+    </font>
+    <h2 align="center">¿Cuánto sabes de Música y Cine?</h2>
+    <p align="center">Gana puntos jugando y respondiendo las siguientes preguntas<br> para probar tus conocimientos en Música y Cine.
+    </p>
+    <h3 align="center">
+        <label for="txtNombre" name="lblNombre">¿Cuál es tu nombre?</label><br>
+        <input type="text" id="txtNombre" name="txtNombre" /><br />
+        <input type="button" value="Guardar" onclick="preguntaNombre()" value="Guardar">
+        <br><br> </h3>
+    </div>
+    <div id="tema" style="display: none;">
+        <h3 align="center">Elige el tema</h3>
+
+        <button align="center" onclick="musica()">
+            <h4>
+                <label for="txtNombre" name="lblNombre">Música</label><br></h4>
+        </button>
+
+        <button align="center" onclick="cine()">
+            <h4>
+                <label for="txtNombre" name="lblNombre"> Cine </label><br></h4>
+        </button>
+    </div>
+    <div>
+        <ol id="cine" style="display: none">
+            <li>
+                ¿Qué película internacional ganó el Oscar 2019?
+            </li>
+
+            <input type="radio" name="película" value="1">Parasite
+
+            <br>
+
+            <input type="radio" name="película" value="2">Green Book
+
+            <br>
+
+            <input type="radio" name="película" value="3">Roma
+
+            </select>
+            <br><br>
+            <li>¿Quién fue el Director de la Película Titanic?</li>
+
+            <input type="radio" name="director" value="1">Steven Spielberg
+
+            <br>
+
+            <input type="radio" name="director" value="2">James Cameron
+
+            <br>
+
+            <input type="radio" name="director" value="3">Quentin Tarantino
+
+
+            </select>
+            <br><br>
+
+
+
+            <li>¿Qué actor hizo el papel de Iron-Man?</li>
+
+            <input type="radio" name="actor" value="1">Robert Pattinson
+
+            <br>
+
+            <input type="radio" name="actor" value="2">Robert Downey Jr
+
+            <br>
+
+            <input type="radio" name="actor" value="3">Chris Evans
+
+            </select>
+            <br><br>
+            <input type="button" value="Guardar" onclick="enviarRespuestas()" value="Guardar">
+        </ol>
+        <ol id="musica" style="display: none">
+
+            <li>¿Cuál fue la última canción de Justin Bieber?</li>
+
+            <input type="radio" name="cancion" value="1">Yummy
+
+            <br>
+
+            <input type="radio" name="cancion" value="2">Boyfriend
+
+            <br>
+
+            <input type="radio" name="cancion" value="3">Love Yourself
+
+
+            </select>
+            <br><br>
+
+            <li>¿De qué grupo musical formaba parte Pedro Suárez Vértiz?</li>
+
+            <input type="radio" name="grupo" value="1">Los Prisioneros
+
+            <br>
+
+            <input type="radio" name="grupo" value="2">Libido
+
+            <br>
+
+            <input type="radio" name="grupo" value="3">Arena Hash
+
+            </select>
+            <br><br>
+
+            <li>¿Quién ganó el Primer Latin Gramy 2019 del mejor mejor álbum de músic urbana?&nbsp;</li>
+
+            <input type="radio" name="cantante" value="1">Bad Bunny
+
+            <br>
+
+            <input type="radio" name="cantante" value="2">De La Guetto
+
+            <br>
+
+            <input type="radio" name="cantante" value="3">Feid
+            <br><br>
+            <input type="button" value="Guardar" onclick="enviarRespuestas()" value="Guardar">
+
+        </ol>
+    </div>
+
+   
+
+
+    <script type="text/javascript" src="app.js">
+
+    </script>
+</body>
+
+
+
+</body>
+
+</html>
